@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: nonprod-app
+  namespace: argocd
+  labels:
+    resource: nonprod-root
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/Mathpro1412/platform-k8s-app.git
+    targetRevision: main
+    path: argo-apps/nonprod
+    directory:
+      recurse: true
+  destination:
+    name: in-cluster
+    namespace: argocd
