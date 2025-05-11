@@ -5,9 +5,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/Mathpro1412/platform-k8s-app-config-prod.git
+    repoURL: https://github.com/Mathpro1412/platform-k8s-app-overlays.git
     targetRevision: main
-    path: manifests
+    path: apps/prod
   destination:
     name: in-cluster
     namespace: prod
