@@ -11,6 +11,7 @@ spec:
     helm:
       valueFiles:
         - values.yaml
+        - https://raw.githubusercontent.com/Mathpro1412/nong-kai-helm-charts/main/prod/custom.yaml
   destination:
     name: in-cluster
     namespace: prod
