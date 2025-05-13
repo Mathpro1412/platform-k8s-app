@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: nong-kai-helm-prod
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/Mathpro1412/platform-k8s-app-templates.git
+    targetRevision: main
+    path: .
+    helm:
+      valueFiles:
+        - values.yaml
+  destination:
+    name: in-cluster
+    namespace: prod
+  syncPolicy:
+    automated:
+      prune: true
