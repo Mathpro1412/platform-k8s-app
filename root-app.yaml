@@ -5,6 +5,8 @@ metadata:
   namespace: argocd
   labels:
     resource: root
+  annotations:
+    notifications.argoproj.io/subscribe.on-sync-succeeded.discord: ""
 spec:
   project: default
   source: 
