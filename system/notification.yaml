@@ -17,10 +17,7 @@ data:
                 body: |
                     {
                         "username": ": "{{.app.metadata.name}}",
-                        "content": " Application {{.app.metadata.name}} is now running new version of deployments manifests.
-                            url: {{.context.argocdUrl}}/applications/{{.app.metadata.name}}
-                            context: continuous-delivery/{{.app.metadata.name}}
-                        "
+                        "content": " Application {{.app.metadata.name}} is now running new version of deployments manifests."
                     }
 
     trigger.on-sync-succeeded: |
