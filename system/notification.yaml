@@ -16,6 +16,6 @@ spec:
             - -c
             - >
               curl -X POST -H "Content-Type: application/json" \
-              -d '{"content": "🚀 Application **my-app** was successfully deployed via Git push and synced by ArgoCD!"}' \
+              -d "{\"content\": \"🚀 Application **my-app** was successfully deployed via Git push and synced by ArgoCD!\"}" \
               https://discord.com/api/webhooks/1373677287006011586/tWgjgjxMemL1PiEE-Oj2Ws48QajYdnHIpcwmbC-DZCOYeclItnwMOZa5Lh1WY2m7txk0
       restartPolicy: Never
