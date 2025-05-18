@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: nonprod-app
+  name: nonprod
   namespace: argocd
   labels:
     resource: nonprod-root
